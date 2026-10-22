@@ -1,0 +1,12 @@
+name: CI
+
+on:
+  push:
+  pull_request:
+
+jobs:
+  greet-check:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Greet
+        run: echo greeting pipeline ok
